@@ -6,4 +6,204 @@
 
 // Variables
 $main-white: #fff;
-$main-blue: #4bcaff;
+$main-blue: #4bcaff; //main blue
+$secondary-blue: #447084; // shadow blue
+$third-blue: #131e29; //nav bg blue
+$main-black: #414042; // for heading
+$secondary-black: #171a1e; // hero section icon bg
+$main-grey: #838383; //main paragraph
+$secondary-grey: #d3d3d3; //form input placehoder
+$third-grey: #69696a; //for footer text color
+$main-green: #91c46b;
+$main-orange: #fd7c00;
+
+/* Global styles */
+.divider{
+    height: 0.5px;
+    width: 100%;
+    background-color: #404d5c;
+}
+
+/* Start of navbar */
+.navbar-container{
+    height: 120px;
+    background-color: $third-blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 145px;
+    // justify-content: center;
+}
+
+.navbar-title{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        width: 37px;
+        height: auto;
+        // transform: translateX(55px);
+        position: absolute;
+        left: 199.5px;
+        top: 25px;
+    }
+
+    h2{
+        color: $main-white;
+        display: inline-block;
+        font-size: 45px;
+        cursor: pointer;
+
+        span{
+            color: $main-blue;
+        }
+    }
+}
+
+.navbar-items{
+    margin-left: auto;
+    // float: right;
+
+    ul{
+        // float: right;
+        li{
+            display: inline-block;
+            list-style: none;
+
+            a{
+                color: $main-white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 17px;
+                cursor: pointer;
+                transition: 0.3s color ease-in;
+                font-weight: 600;
+            }
+
+            a:hover{
+                color: $main-blue;
+            }
+
+        }
+
+        li:not(:last-child){
+            margin-right: 30px;
+        }
+
+        // li:last-child{
+            // margin-right: 45px;
+        // }
+    }
+}
+/* End of navbar */
+/* Start of hero section */
+.hero-section{
+    width: 100%;
+    height: 1035px;
+    background: url('../images/hero.png') no-repeat center/cover;
+    // padding-top: 350px;
+    // padding-left: 844px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-content{
+        margin-left: auto;
+        // background-color: white;
+        // width: auto;
+            // height: auto;
+            // margin-left: auto;
+            // width: 50%;
+            // height: 50%;
+            // margin-top: auto;
+        margin-left: 700px;
+        margin-top: 85px;
+
+        .hero-title{
+            
+            h1{
+                color: $main-white;
+                font-weight: 300;
+                font-size: 65px;
+                letter-spacing: 0.8px;
+                margin-bottom: 35px;
+            }
+            
+            p{
+                letter-spacing: 1.2px;
+                color: $main-white;
+                line-height: 32px;
+                font-size: 22px;
+            }
+        }
+
+    }
+
+    .hero-btn-container{
+        margin-top: 50px;
+        margin-bottom: 70px;
+
+        .hero-btn-download{
+            border: 1px solid $main-white;
+            background-color: transparent;
+            margin-right: 35px;
+        }
+    }
+}
+.hero-btn-download,
+.main-btn{
+    border: none;
+    color: $main-white;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    padding: 22px 52px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-btn{
+    background-color: $main-blue;
+    box-shadow: 0 4px 1px 1px $secondary-blue;
+}
+
+.hero-app{
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+    
+    p{
+        font-size: 22px;
+        color: $main-white;
+        margin-right: 45px;
+        letter-spacing: 1.2px;
+    }
+
+    .app{
+        width: 65px;
+        height: 65px;
+        background-color: $main-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: 0.3s ease-in background-color;
+
+        img{
+            width: 25px;
+            height: auto;
+        }
+    }
+
+    .app:not(:last-child){
+        margin-right: 25px;
+    }
+
+    .app:hover{
+        background-color: $secondary-grey;
+        cursor: pointer;
+    }
+}
+/* End of hero section */
