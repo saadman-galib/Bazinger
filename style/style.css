@@ -5,10 +5,31 @@
 }
 
 /* Global styles */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.responsive {
+  display: none;
+}
+
 .divider {
   height: 0.5px;
   width: 100%;
   background-color: #404d5c;
+}
+
+/* Media Queries */
+@media (max-width: 1900px) {
+  .navbar-container,
+  .hero-section,
+  .features-section,
+  .divider {
+    display: none;
+  }
+  .responsive {
+    display: block !important;
+  }
 }
 
 /* Start of navbar */
@@ -19,6 +40,7 @@
   display: flex;
   align-items: center;
   padding: 0 145px;
+  font-family: droid-sans, sans-serif;
 }
 
 .navbar-title {
@@ -31,7 +53,7 @@
   width: 37px;
   height: auto;
   position: absolute;
-  left: 199.5px;
+  left: 206.5px;
   top: 25px;
 }
 
@@ -60,6 +82,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
+  letter-spacing: 0.8px;
   cursor: pointer;
   transition: 0.3s color ease-in;
   font-weight: 600;
@@ -172,3 +195,70 @@
 }
 
 /* End of hero section */
+/* Start of features section */
+.features-section {
+  background-color: #f9f9f9;
+}
+
+.features-section .features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.features-section .features-container .feature {
+  margin: 0 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.features-section .features-container .feature .feature-img-container {
+  width: 165px;
+  height: 165px;
+  background-color: #4bcaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 45px;
+}
+
+.features-section .features-container .feature h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #414042;
+  letter-spacing: 0.6px;
+}
+
+.features-section .features-container .feature p {
+  color: #838383;
+  letter-spacing: 0.8px;
+  line-height: 25px;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 55px;
+  letter-spacing: 0.8px;
+}
+
+.section-title h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: #414042;
+}
+
+.section-title h2 {
+  color: #414042;
+  font-weight: 400;
+}
+
+/* End of features section */
+/* Start of gallery section */
+/* End of gallery section */
