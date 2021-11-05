@@ -37,8 +37,12 @@ body{
     .navbar-container,
     .hero-section,
     .features-section,
-    .divider
-    {display: none;}
+    .divider,
+    .gallery-section,
+    .video-section,
+    .price-section{
+        display: none;
+    }
 
     .responsive{
         display: block !important;
@@ -411,16 +415,145 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top: 85px;
+        padding-bottom: 85px;
 
         .package{
-            margin: 0 25px;
-            width: 375px;
-            height: auto;
+            border: 1px solid #dad7d7;
+            margin: 35px 20px;
+            width: 385px;
+            height: 525px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             background-color: #f9f9f9;
+            border-radius: 4px;
+            
+
+            .package-title{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 90px;
+
+                h5{
+                    font-size: 23px;
+                    text-transform: uppercase;
+                    color: #d7d7d7;
+                }
+            }
+
+            .price{
+                width: 100%;
+                height: 125px;
+                background-color: $main-green;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h3{
+                    font-size: 98px;
+                    color: $main-white;
+                    font-family: droid-sans, sans-serif;
+                    text-shadow: rgba(0, 0, 0, 0.295) 3px 2px 2px;
+                }
+            }
+
+            .package-items{
+                width: 100%;
+
+                p{
+                    font-size: 24px;
+                    line-height: 42px;
+                    font-weight: 700;
+                    color: #d7d7d7;
+                }
+
+                p:first-child{
+                    margin-top: 35px;
+                }
+
+                p:last-child{
+                    margin-bottom: 35px;
+                }
+
+            }
+
+            .package-btn{
+                width: 100%;
+
+                button{
+                    border: none;
+                    background-color: $main-green;
+                    font-size: 20px;
+                    letter-spacing: 0.8px;
+                    padding: 22px 52px;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    color: $main-white;
+                    font-weight: 700;
+                    transition: 0.3s ease-in opacity;
+                }
+
+                button:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .advanced-package{
+            .price{
+                background-color: $main-orange;
+            }
+
+            .package-btn{
+                button{
+                    background-color: $main-orange;
+                }
+            }
+        }
+
+        .proffesional-package{
+            margin-top: 0;
+            height: 595px;
+            width: 475px;
+
+            .package-title{
+                h5{
+                    color: $main-blue;
+                    font-size: 26px;
+                }
+            }
+
+            .package-items{
+                p{
+                    color: $main-blue;
+                }
+
+                p:first-child{
+                    margin-top: 45px;
+                }
+
+                p:last-child{
+                    margin-bottom: 55px;
+                }
+
+            }
+
+            .price{
+                background-color: $main-blue;
+            }
+
+            .package-btn{
+                // margin-bottom: 45px;
+
+                button{
+                    background-color: $main-blue;
+                }
+            }
         }
     }
 }
