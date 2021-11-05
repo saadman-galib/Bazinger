@@ -267,6 +267,12 @@ body{
                 margin-bottom: 30px;
                 color: $main-black;
                 letter-spacing: 0.6px;
+                cursor: pointer;
+                transition: 0.3s ease-in color;
+            }
+            
+            h3:hover{
+                color: $main-blue;
             }
 
             p{
@@ -275,6 +281,7 @@ body{
                 line-height: 25px;
             }
         }
+
     }
 }
 
@@ -290,7 +297,7 @@ body{
         color: $main-black;
     }
 
-    h2{
+    h2 {
         color: $main-black;
         font-weight: 400;
 
@@ -298,4 +305,58 @@ body{
 }
 /* End of features section */
 /* Start of gallery section */
+.gallery-section{
+    width: 100%;
+    height: auto;
+
+    .gallery-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 100px;
+        padding-bottom: 100px;
+
+        .gallery{
+            margin: 0 35px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            // height: 400px;
+            width: 350px;
+
+            .blue-div{
+                width: 100%;
+                // width: 200px;
+                height: 250px;
+                border-radius: 12px;
+                background-color: $main-blue;
+            }
+
+            .dark-blue-container{
+                background-color: $secondary-blue;
+                width: 100%;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                transform: translateY(-40px);
+
+                h5{
+                    color: $main-blue;
+                    padding: 12px 0;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+            }
+
+            p{
+                color: $main-grey;
+                letter-spacing: 0.8px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
 /* End of gallery section */
