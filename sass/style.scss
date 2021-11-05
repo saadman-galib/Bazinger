@@ -358,5 +358,71 @@ body{
         }
     }
 }
-
 /* End of gallery section */
+/* Start of video section */
+.video-section{
+    width: 100%;
+    background: url('../images/image.png') no-repeat center/cover;
+    height: 762px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-top: 130px;
+    padding-left: 450px;
+
+    h1{
+        color: $main-white;
+        font-weight: 300;
+        font-size: 65px;
+        letter-spacing: 0.8px;
+        margin-bottom: 65px;
+        text-shadow: rgba(0, 0, 0, 0.616) 3px 2px 2px;
+        // box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+        // -webkit-box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+        // -moz-box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+    }
+
+    .video-section-p-container{
+        width: 900px;
+        transform: translateX(135px);
+    }
+
+    p{
+        letter-spacing: 1.2px;
+        color: $main-white;
+        line-height: 32px;
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+
+    p:not(:last-child){
+        margin-bottom: 35px;
+    }
+}
+/* End of video section */
+/* Start of price section */
+.price-section{
+    width: 100%;
+    height: auto;
+
+    .package-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .package{
+            margin: 0 25px;
+            width: 375px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+    }
+}
+
+/* End of price section */
