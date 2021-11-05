@@ -17,6 +17,7 @@ body {
   height: 0.5px;
   width: 100%;
   background-color: #404d5c;
+  opacity: 0.5;
 }
 
 /* Media Queries */
@@ -140,6 +141,12 @@ body {
   border: 1px solid #fff;
   background-color: transparent;
   margin-right: 35px;
+  transition-property: background-color;
+}
+
+.hero-section .hero-btn-container .hero-btn-download:hover {
+  background-color: #fff;
+  color: #414042;
 }
 
 .hero-btn-download,
@@ -152,11 +159,17 @@ body {
   border-radius: 8px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.3s ease-in;
 }
 
 .main-btn {
   background-color: #4bcaff;
   box-shadow: 0 4px 1px 1px #447084;
+  transition-property: opacity;
+}
+
+.main-btn:hover {
+  opacity: 0.8;
 }
 
 .hero-app {
@@ -498,3 +511,95 @@ body {
 }
 
 /* End of price section */
+/* Start of testimonials section */
+.testimonials-section {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-section .testimonial-container {
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100px;
+  width: 700px;
+  margin-top: 75px;
+  margin-bottom: 105px;
+  align-items: center;
+}
+
+.testimonials-section .testimonial-container .testimonial-img-container {
+  width: 155px;
+  height: 175px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.testimonials-section .testimonial-container .testimonial-img-container .testimonial-img-1 {
+  width: 220px;
+  height: 220px;
+}
+
+.testimonials-section .testimonial-container .testimonial-img-container .testimonial-img-2 {
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  left: 20px;
+}
+
+.testimonials-section .testimonial-container .testimonial-paragraph {
+  width: 490px;
+}
+
+.testimonials-section .testimonial-container .testimonial-paragraph p {
+  font-weight: 800;
+  color: #4bcaff;
+  letter-spacing: 0.8px;
+}
+
+.testimonials-section .testimonial-container .testimonial-paragraph .author-p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.testimonials-section .testimonial-container .testimonial-paragraph .author-p p {
+  margin-left: auto;
+}
+
+/* End of testimonials section */
+/* Start of download section */
+.download-section {
+  width: 100%;
+  min-height: 100px;
+  background-color: #414042;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+.download-section h1 {
+  font-size: 75px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.download-section .main-btn {
+  color: #414042;
+}
+
+/* End of download section */
+/* Start of contact section */
+/* End of contact section */
